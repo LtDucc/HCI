@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>5 Technology Trends to Watch in 2019</title>
+	<meta charset="utf-8">
+	<meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/baiviet6.css">
+</head>
+<body>
+<div class="navbar">
+    <div class="container">
+      <div class="navbar-left">
+    <a><i class="fab fa-facebook-square fa-2x"></i></a>
+    <a><i class="fab fa-instagram fa-2x"></i></a>
+    <a><i class="fab fa-twitter-square fa-2x"></i></a>
+    <a><i class="fab fa-google-plus-square fa-2x"></i></a>
+      </div>
+      <div class="navbar-right">
+        <div class="wrap">
+  <form action="" autocomplete="on">
+  <input id="search" name="search" type="text" placeholder="What're we looking for ?">
+  <input id="search_submit" value="Rechercher" type="submit">
+  <i class="fas fa-search fa-2x" style="color: #fff; margin-top: 10px"></i>
+  </form>
+</div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="banner"></div>
+  <div class="submenu">
+    <div class="container">
+    <button><a href="">All Blog</a></button>
+    <button><a href="">Coding</a></button>
+    <button><a href="">New Tech</a></button>
+    <button><a href="">Review</a></button>
+    <button><a href="">About Blog</a></button>
+    <button><a href="">About Us</a></button>
+  </div>
+  </div>
+
+  <!-- -------------------Heading------------------------ -->
+
+<div class="container">
+	<ul class="breadcrumb">
+  		<li><a href="#">Home</a></li>
+  		<li>Coding</li>
+</ul>
+<hr>
+<h1 class="title">JavaScript Inheritance vs Composition</h1>
+<div class="author">
+<h3>Update: 27/5/2019</h3>
+<h3>Author: Tyler Mginnis</h3>
+</div>
+<img src="img/imagepost6.jpg">
+<div class="post">
+<p>Disruptive technology trends determine the way the new year will be shaped. They will accelerate and transform many industries at a rapid pace throughout the year. They will shape the world and the future and will be present on the horizon of business owners and investors alike. </p>
+
+<p>The intelligent digital mesh is going to include interconnected humans, robots, devices, content, and services all driven by digital transformation. Disruptive technology trends are going to propel the future where technology innovation leaders must evolve and change at the same pace of the trends they must embrace. Or, they could be left behind and suffer a slowly mass extinction.</p>
+
+<p>Perhaps the obvious technology to watch closely in 2019 --before we can move on to anything else-- will be 5G. 5G is a necessary technology. Without 5G technology, none of the technologies mentioned below would be possible. Autonomous vehicles, drones, the Internet of Things, and supercomputers could not be possible without 5G networks.</p>
+
+<p>5G technology is going to improve processing speeds by more than 10 times in 2019. This is the technology that can make possible, for instance, the much expected remote surgery in rural areas.</p>
+
+<p>Artificial Intelligence surgery might sound too futuristic to some. However, robot surgeons powered by AI are bringing new innovations and accuracy to the operating room.  </p>
+
+
+<video width="761" height="500" controls>
+	<source src="video/Everything You Need to Know About 5G.mp4" type="video/mp4">
+</video>
+
+<p>These technologies are worth to watch closely in 2019.</p>
+
+<h4>1. Machine Learning will advance Artificial Intelligence (AI) </h4>
+
+<img src="img/imagepost6.1.jpg">
+
+<div class="code">
+	class Animal { <br>
+  constructor(name, energy) {<br>
+    this.name = name<br>
+    this.energy = energy<br>
+  }<br>
+  eat(amount) {<br>
+    console.log(`${this.name} is eating.`)<br>
+    this.energy += amount<br>
+  }<br>
+  sleep() {<br>
+    console.log(`${this.name} is sleeping.`)<br>
+    this.energy += length<br>
+  }<br>
+  play() {<br>
+    console.log(`${this.name} is playing.`)<br>
+    this.energy -= length<br>
+  }<br>
+}<br>
+<br>
+class Dog extends Animal {<br>
+  constructor(name, energy, breed) {<br>
+    super(name, energy)<br>
+
+    this.breed = breed<br>
+  }<br>
+  bark() {<br>
+    console.log('Woof Woof!')<br>
+    this.energy -= .1<br>
+  }<br>
+}<br>
+<br>
+class Cat extends Animal {<br>
+  constructor(name, energy, declawed) {<br>
+    super(name, energy)<br>
+<br>
+    this.declawed = declawed<br>
+  }<br>
+  meow() {<br>
+    console.log('Meow!')<br>
+    this.energy -= .1<br>
+  }<br>
+}<br>
+</div>
+
+<p>And without the code, we can visualize our class structure like this.</p>
+
+<div class="code">
+  Animal<br>
+  	name<br>
+  	energy<br>
+  	eat()<br>
+  	sleep()<br>
+  	play()<br>
+<br>
+  Dog<br>
+    breed<br>
+    bark()<br>
+<br>
+  Cat<br>
+    declawed<br>
+    meow()<br>
+</div>
+
+<p>This worked well as it allowed us to minimize code duplication and maximize code reuse.</p>
+
+<p>Let's take this a step further and pretend we're building software for "Farm Fantasy" - a massively multiplayer online (MMO) role-playing game where you do the same thing a farmer does, except, you know, online and you pay to do it.</p>
+
+<p>Now that we're creating an MMO, we're going to need to have users. We can update our class structure now to look like this.</p>
+
+<div class="code">
+  User<br>
+  email<br>
+  username<br>
+  pets<br>
+  friends<br>
+  adopt()<br>
+  befriend()<br>
+<br>
+Animal<br>
+  name<br>
+  energy<br>
+  eat()<br>
+  sleep()<br>
+  play()<br>
+<br>
+  Dog<br>
+    breed<br>
+    bark()<br>
+<br>
+  Cat<br>
+    declawed<br>
+    meow()<br>
+</div>
+
+<p>The examples above are textbook examples of classes and inheritance. Sadly, unlike in the classroom, real-world software development isn't always so predictable.</p>
+
+
+<p>Let's say six months after building out our initial class structure, our project manager decides we need to change some things. Users love the app and the ability to pay to be a pretend farmer, but they want a more real-life experience. Right now, only instances of Animal have the ability to <button>eat</button>, <button>sleep</button>, and <button>play</button>. The users are demanding that they also have those same features.</p>
+
+<p>Alright, no issue. We just need to adjust our class structure around a little bit.</p>
+
+<div class="code">
+... 🤔
+</div>
+
+<p>I guess we could abstract the common properties to another parent class and have one more step of inheritance.</p>
+
+<div class="code">
+FarmFantasy<br>
+  <br>
+  play()<br>
+  sleep()<br>
+  eat()<br>
+<br>
+  User<br>
+    email<br>
+    username<br>
+    pets<br>
+    friends<br>
+    adopt()<br>
+    befriend()<br>
+<br>
+  Animal<br>
+    energy<br>
+<br>
+    Dog<br>
+      breed<br>
+      bark()<br>
+<br>
+    Cat<br>
+      declawed<br>
+      meow()<br>
+</div>
+
+<p>That works, but it's incredibly fragile. There's even a name for this anti-pattern -<a href="https://en.wikipedia.org/wiki/God_object">God object</a>.</p>
+
+<p>And just like that, we see the most significant weakness with inheritance. With inheritance, you structure your classes around what they are, a <BUTTON>User</BUTTON>, an <button>Animal</button>, a <button>Dog</button>, a <button>Cat</button> - all of those words encapsulate a meaning centered around what those things are. The problem with that is a <button>User</button> today will probably be different than a <button>User</button> in 6 months. Inheritance makes us turn a blind eye to the inevitable fact that our class structure will most likely change in the future, and when it does, our tightly coupled inheritance structure is going to crumble.</p>
+
+<p>The problem with object-oriented languages is they’ve got all this implicit environment that they carry around with them. You wanted a banana but what you got was a gorilla holding the banana and the entire jungle. - Joe Armstrong. Creator of Erlang.</p>
+
+<p>So if inheritance is such a problem, how do we get the same functionality while minimizing some of the downsides? Rather than thinking in terms of what things are, what if we think in terms of what things do? Let's take a Dog, for example. A Dog is a sleeper, eater, player, and barker. A Cat is a sleeper, eater, player, and meower. A User is a sleeper, eater, player, adopter, and friender. Now let's transform all of these verbs into functions.</p>
+
+<div class="code">
+	const eater = () => ({})<br>
+const sleeper = () => ({})<br>
+const player = () => ({})<br>
+const barker = () => ({})<br>
+const meower = () => ({})<br>
+const adopter = () => ({})<br>
+const friender = () => ({})<br>
+</div>
+
+<p>Do you see where we're going with this? Instead of having these methods defined (and coupled) to a particular class, if we abstract them into their own functions, we can now compose them together with any type that needs them.</p>
+
+<p>Let's take a closer look at one of our methods again, <button>eat</button>.</p>
+
+<div class="code">
+eat(amount) {<br>
+  console.log(`${this.name} is eating.`)<br>
+  this.energy += amount<br>
+}
+</div>
+
+<p>Notice that <button>eat</button> logs to the console then increases the <button>energy</button> property on the instance by the <button>amount</button> argument. Now the question we need to answer is how we can operate on a specific instance from a one-off function? Well, what if we just pass it in when we invoke the function? Seems simple enough.</p>
+
+<div class="code">
+	const eater = (state) => ({<br>
+  eat(amount) {<br>
+    console.log(`${state.name} is eating.`)<br>
+    state.energy += amount<br>
+  }<br>
+})<br>
+</div>
+
+<p>Now we can follow this same pattern for each one of our functions.</p>
+
+<div class="code">
+	...<br>
+<br>
+const sleeper = (state) => ({<br>
+  sleep(length) {<br>
+    console.log(`${state.name} is sleeping.`)<br>
+    state.energy += length<br>
+  }<br>
+})<br>
+<br>
+const player = (state) => ({<br>
+  play() {<br>
+    console.log(`${state.name} is playing.`)<br>
+    state.energy -= length<br>
+  }<br>
+})<br>
+<br>
+const barker = (state) => ({<br>
+  bark() {<br>
+    console.log('Woof Woof!')<br>
+    state.energy -= .1<br>
+  }<br>
+})<br>
+<br>
+const meower = (state) => ({<br>
+  meow() {<br>
+    console.log('Meow!')<br>
+    state.energy -= .1<br>
+  }<br>
+})<br>
+<br>
+const adopter = (state) => ({<br>
+  adopt(pet) {<br>
+    state.pets.push(pet)<br>
+  }<br>
+})<br>
+<br>
+const friender = (state) => ({<br>
+  befriend(friend) {<br>
+    state.friends.push(friend)<br>
+  }<br>
+})<br>
+</div>
+
+<p>Now whenever a Dog, Cat, or User needs to add the ability to do any of the functions above, they merge the object they get from one of the functions onto their own object.</p>
+
+<p>Let's see what that looks like. We'll start with a Dog. Earlier we defined a Dog by what it does, a Dog is a <button>sleeper</button>, <button>eater,</button> <button>player</button>, and <button>barker</button>.</p>
+
+<div class="code">
+	function Dog (name, energy, breed) {<br>
+  let dog = {<br>
+    name,<br>
+    energy,<br>
+    breed,<br>
+  }<br>
+<br>
+  return Object.assign(<br>
+    dog,<br>
+    eater(dog),<br>
+    sleeper(dog),<br>
+    player(dog),<br>
+    barker(dog),<br>
+  )<br>
+}<br>
+<br>
+const leo = Dog('Leo', 10, 'Goldendoodle')<br>
+leo.eat(10) // Leo is eating<br>
+leo.bark() // Woof Woof!<br>
+</div>
+
+<p>Inside of <button>Dog</button> we create the "instance" using a plain old JavaScript object. Then we use <<button>Object.assign</button> to merge the dog's state with all of the methods a dog should have - each defined by what a dog does, not what it is.</p>
+
+<p>Now how would we create a Cat class? Earlier we defined a Cat as a <button>sleeper</button>, <button>eater</button>, <button>player</button>, and <button>meower</button>.</p>
+
+<div class="code">
+	function Cat (name, energy, declawed) {<br>
+  let cat = {<br>
+    name,<br>
+    energy,<br>
+    declawed,<br>
+  }<br>
+<br>
+  return Object.assign(<br>
+    cat,<br>
+    eater(cat),<br>
+    sleeper(cat),<br>
+    player(cat),<br>
+    meower(cat),<br>
+  )<br>
+}<br>
+</div>
+
+<p>Now, what about a <button>User</button>? Earlier we ran into issues when we needed to refactor our class structure so that users could also <button>sleep</button>, <button>eat</button>, and <button>play</button>. Now that we've decoupled our functions from the class hierarchy, this is trivial to do.</p>
+
+<div class="code">
+	unction User (email, username) {<br>
+  let user = {<br>
+    email,<br>
+    username,<br>
+    pets: [],<br>
+    friends: []<br>
+  }<br>
+<br>
+  return Object.assign(<br>
+    user,<br>
+    eater(user),<br>
+    sleeper(user),<br>
+    player(user),<br>
+    adopter(user),<br>
+    friender(user),<br>
+  )<br>
+}<br>
+</div>
+
+<p>To really test our theory, what if we wanted to give all dogs the ability to add friends as well. This wasn't in our initial requirement but with composition, it's pretty straight forward.</p>
+
+<div class="code">
+	function Dog (name, energy, breed) {<br>
+  let dog = {<br>
+    name,<br>
+    energy,<br>
+    breed,<br>
+    friends: []<br>
+  }<br>
+<br>
+  return Object.assign(<br>
+    dog,<br>
+    eater(dog),<br>
+    sleeper(dog),<br>
+    player(dog),<br>
+    barker(dog),<br>
+    friender(dog),<br>
+  )<br>
+}<br>
+</div>
+
+<p></p>
+
+
+
+Relate: <button><a href="">Coding</a></button>
+</div>
+
+
+
+</body>
+</html>
