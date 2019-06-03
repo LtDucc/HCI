@@ -12,6 +12,7 @@
 	<script type="text/javascript" src="js/jssor.slider.min.js"></script>
     <script type="text/javascript" src="js/api-event-handling.js"></script>
     <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/test.css">
 </head>
 <body>
 	<div class="navbar">
@@ -142,10 +143,111 @@
 </div>
 <!-- -----------------latest from blog------------ -->
 <div class="popular">
-	<div class="container">
-		<h1>Most Popular From Blog</h1>
-	</div>
+	<h1>Popular from blog</h1>
+<div class="slideshow-container">
+<div class="mySlides fade1">
+  <div class="slide">
+      <div class="blog1">
+      <img src="img/imagepost2.jpg">
+      <a href="baiviet2.html"><h3>Cisco security spotlights Microsoft Office 365 e-mail phishing increase</h3></a>
+    </div>
+        <div class="blog1">
+      <img src="img/imagepost2.jpg">
+      <a href="baiviet2.html"><h3>Cisco security spotlights Microsoft Office 365 e-mail phishing increase</h3></a>
+    </div>
+        <div class="blog1">
+      <img src="img/imagepost2.jpg">
+      <a href="baiviet2.html"><h3>Cisco security spotlights Microsoft Office 365 e-mail phishing increase</h3></a>
+    </div>
+    </div>
 </div>
 
+<div class="mySlides fade1">
+   <div class="slide">
+      <div class="blog1">
+      <img src="img/imagepost2.jpg">
+      <a href="baiviet2.html"><h3>Cisco security spotlights Microsoft Office 365 e-mail phishing increase</h3></a>
+    </div>
+        <div class="blog1">
+      <img src="img/imagepost2.jpg">
+      <a href="baiviet2.html"><h3>Cisco security spotlights Microsoft Office 365 e-mail phishing increase</h3></a>
+    </div>
+        <div class="blog1">
+      <img src="img/imagepost2.jpg">
+      <a href="baiviet2.html"><h3>Cisco security spotlights Microsoft Office 365 e-mail phishing increase</h3></a>
+    </div>
+    </div>
+</div>
+
+<div class="mySlides fade1">
+   <div class="slide">
+      <div class="blog1">
+      <img src="img/imagepost2.jpg">
+      <a href="baiviet2.html"><h3>Cisco security spotlights Microsoft Office 365 e-mail phishing increase</h3></a>
+    </div>
+        <div class="blog1">
+      <img src="img/imagepost2.jpg">
+      <a href="baiviet2.html"><h3>Cisco security spotlights Microsoft Office 365 e-mail phishing increase</h3></a>
+    </div>
+        <div class="blog1">
+      <img src="img/imagepost2.jpg">
+      <a href="baiviet2.html"><h3>Cisco security spotlights Microsoft Office 365 e-mail phishing increase</h3></a>
+    </div>
+    </div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+<div class="container">
+	<a href="" class="link"><h2>See More Blog </h2></a>
+</div>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+<div class="contact">
+	<div class="container">
+		 <div class="row">
+    <div class="col-6"></div>
+    <div class="col-6"></div>
+  </div>
+	</div>
+</div>
+	<footer></footer>
 </body>
 </html> 
