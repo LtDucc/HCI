@@ -12,7 +12,8 @@ body{
 	height: 50px;
 }
 .container{
-	height: 50px
+	height: 50px;
+  margin-top: 0px
 }
 
 .navbar-left{
@@ -116,4 +117,109 @@ input[type="submit"]:hover {
 }
 .submenu button:hover{
 	background-color: #2F8E18
+}
+/*------------contact--------------*/
+.footer{
+  width: 100%;
+  height: 700px;
+  background-color: #f1f1f1;
+}
+.footer .container{
+   display: flex;
+  justify-content: space-between;
+}
+.footer .contact{
+    height: 530px;
+    width: 460px;
+    background-color: #f1f1f1;
+    text-align: center;
+}
+.footer .contact h2{
+  font-size: 26px;
+  margin-top: 130px
+}
+.footer .contact form{
+  width: 100%;
+  height: 150px;
+  margin-top: 40px
+}
+.footer .contact input[type ="name"]{
+  width: 440px;
+  height: 60px;
+  padding: 7px;
+  margin-bottom: 32px
+}
+.footer .contact button{
+  width: 125px;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid #000;
+  background-color: #f1f1f1
+}
+.footer .contact button:hover{
+  border-bottom: 2px solid #000;
+  width: 200px;
+  transition: 0.5s ease-in-out;
+}
+.footer .contact button a{
+  font-size: 26px;
+  text-decoration: none;
+  color: #4f4f4f
+}
+.footer .contact a:hover{
+  font-size: 28px;
+  transition: 0.5s ease-in-out;
+  color: #2F8E18
+}
+.social{
+  height: 50px;
+  width: 240px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 35px
+}
+.footer .infor{
+  height: 530px;
+  width: 540px;
+}
+.footer .infor .logo{
+  width: 540px ;
+  height:166px; 
+  background-color: #000
+}
+.footer .infor .noidung{
+  height: 241px;
+  width: 540px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px
+}
+.footer .infor .noidung > div{
+  height: 241px;
+  width: 255px;
+}
+.footer .infor .noidung ul li{
+  text-decoration: none;
+  list-style: none;
+  margin-left: 60px
+}
+.footer .infor .noidung a{
+  color: #4f4f4f;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 2
+}
+.footer .infor .noidung a:hover{
+  color: #2F8E18
+}
+footer{
+  width: 100%;
+  height: 50px;
+  background-color: #fff
+}
+footer .container{
+  height: 50px;
+  text-align: center;
+  
 }
