@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>5 Technology Trends to Watch in 2019</title>
+	<meta charset="utf-8">
+	<meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="css/page2.css">
+</head>
+<body>
+<div class="navbar">
+    <div class="container">
+      <div class="navbar-left">
+    <a><i class="fab fa-facebook-square fa-2x"></i></a>
+    <a><i class="fab fa-instagram fa-2x"></i></a>
+    <a><i class="fab fa-twitter-square fa-2x"></i></a>
+    <a><i class="fab fa-google-plus-square fa-2x"></i></a>
+      </div>
+      <div class="navbar-right">
+        <div class="wrap">
+  <form action="" autocomplete="on">
+  <input id="search" name="search" type="text" placeholder="What're we looking for ?">
+  <input id="search_submit" value="Rechercher" type="submit">
+  <i class="fas fa-search fa-2x" style="color: #fff; margin-top: 10px"></i>
+  </form>
+</div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="banner"></div>
+  <div class="submenu">
+    <div class="container">
+    <button><a href="">All Blog</a></button>
+    <button><a href="">Coding</a></button>
+    <button><a href="">New Tech</a></button>
+    <button><a href="">Review</a></button>
+    <button><a href="">About Blog</a></button>
+    <button><a href="">About Us</a></button>
+  </div>
+  </div>
+	<!-- -------------------Heading------------------------ -->
+	<div class="container">
+		<ul class="breadcrumb">
+  <li><a href="homepage.html">Home</a></li>
+  <li><a href="#">Coding</a></li>
+  <li><a href="#">New</a></li>
+  <li>Debugging tips</li>
+</ul>
+<hr>
+	<h1><strong>Debugging tips and tricks for JavaScript beginners</strong></h1>
+	<p></p>
+	<p><strong>Update: 04/07/2019, 04:08 PM</strong></p>
+	<p><strong>Author: Mushroom Tora</strong></p>
+	<img src="img/a1.jpeg">
+	<div class="content">
+	<p>My intended audience for this tutorial is beginner programmers. You’ll learn about frustration-free debugging with chrome dev tools.<br>
+
+Dear Beginner, a while ago, I was where you are! After a lot of struggles, I feel like I have come far in my learning journey. I am currently in the senior phase of an immersive bootcamp where I am building full stack applications.<br>
+
+Every day, I learn and stumble upon so many things, which I wished I knew before. This article is an attempt to share one such idea that will make your life easier.<br>
+
+As you must have learned, the best way to learn programming is by doing. Now, as you start practicing coding, sometimes (or most of the times) your code will not work; in other words, there will be a BUG in your code. And you may have already tried and learned some approaches to debugging. This article is not about any one debugging approach, but rather a setup to debug your code for programming practice.<br>
+
+If you are practicing on an online development environment, most probably you have a setup where you have an editor, a problem and a test suite that tests your program.<br>
+
+You have written code, and there are some bugs, and at some point, the errors thrown up by the test suite are not really helpful.<br>
+
+I won’t elaborate on how tedious debugging can become here — rather let me jump straight to some tips for beginners.<br>
+
+<strong>The problem</strong><br>
+As an example, I am writing a palindrome checker in FreeCodeCamp’s editor. My solution fails. In this case, we could use the test suite results to debug.<br>
+
+But let’s assume this test suite doesn’t give me great pointers to the exact error. (This may not be the ideal example in terms of a logical error. The point is you will come across problems where the test suite will not directly point to a logical error.)<br>
+<img src="img/a2.jpg" class="a"><br>
+<strong>Tip: Use the console of developer tools.</strong><br>
+I run the same code in the console with the failing test case, and I see it returns ‘undefined’. That means the code did not return any value. I can quickly see that I forgot to return ‘true ’ if the string was found to be a palindrome.<br>
+<img src="img/a3.jpg" class="a"><br>
+This was a very simple error. Most of the times you would have bugs that need you to examine your variables. One approach to check variables is to <i><b>console.log(variables)</b></i> in the program.<br>
+
+However, I would suggest you use the <i><b>dev tools debugger</b></i> instead. In your program, you can specify the point where you want to start getting help from the debugger.<br>
+<img src="img/a4.jpg" class="a"><br>
+The debugger will show you all the variables in the call stack and let you step through function calls, which you will find very useful.<br>
+<img src="img/a5.jpg" class="a"><br>
+You will get the hang of using the debugger once you have used it a few times. Notice the arrows in the lower left box? These will let you control the program flow and show you the variables as they change.<br>
+
+Now let’s head for a trick.<br>
+<strong>Trick: Make a Personal Debugging Setup</strong><br>
+As seen above, with debugger and console, we can identify the problems easily. However, if I want to run the corrected program again on the console with just one line of change, I would have to re-type it.<br>
+
+Even after that, I get an error:<br>
+<img src="img/a6.jpg" class="a"><br>
+This error is because I have used an arrow function, and cannot re-declare a const. This means that I would have to open a new tab and new console every time I change my code. Extra overhead, right?<br>
+
+Let's find a workaround. On your system, create a directory and cd into that directory.<br>
+
+Now create two files: index.js and index.html. Type the following HTML in index.html:<br>
+<img src="img/a7.jpg" class="a"><br>
+Now move your code from the console to index.js. Notice I have started the debugger on line 2 in the code.<br>
+<img src="img/a8.jpg" class="a"><br>
+Now run the index.html file in the browser. Open the developer tools or console (you may have to refresh to see the debugger). You can debug your code here.<br>
+<img src="img/a9.jpg" class="a"><br>
+Now every time you make a change to index.js you just hit refresh on this tab and the code reruns. No need to close and open tabs, no re-typing whole programs.<br>
+
+Keep the folder you just created handy. Whenever you need to try or debug a piece of code, pop that into index.js and experiment!!<br>
+<strong>Closing thoughts</strong><br>
+If you already knew this, congratulations you wasted a valuable 4 minutes ;)<br>
+
+Finally, remember to <i>err is human</i>! Don’t worry about bugs — they will teach you the most valuable lessons of programming… and then ... <i>Oh! the places you’ll go<i>…<br>
+
+
+
+
