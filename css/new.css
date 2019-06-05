@@ -42,48 +42,51 @@ ul.breadcrumb li a:hover {
   color: #01447e;
   text-decoration: underline;
 }
+.noidung{
+  margin-top: 23px;
+  width: 100%;
+  height: 1100px;
+  
+}
+.noidung .container{
+  height: 1100px;
+  display: flex;
+  justify-content: space-between;
+}
+.noidung .content{
+  width: 761px;
+  height: 1100px;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.noidung .content > div {
+  
+  width: 346px;
+  height: 539px;
+  margin-bottom: 23px;
+}
+.noidung .sidebar{
+  width: 282px;
+  height: 1100px;
+  background-color: #20d
+}
 
 img{
-	width: 761px;
-	height: 500px
+  width: 346px;
+  height: 350px;
 }
 
-p{
-	text-indent: 50px;
-	width: 761px;
-
+.noidung .content a{
+ color: #4f4f4f;
+  text-decoration: none;
+  font-size: 26px;
 }
-
-hr{
-	border: 1px solid #2F8E18;
+.noidung .content a:hover{
+  color: #2F8E18;
 }
-
-.title {
-	margin-top: 29px;
-	font-weight: bold;
-}
-
-.author {
-	margin-top: 42px;
-}
-
-.post{
-	margin-top: 83px;
-}
-
-h3{
-	font-size: 20px;
-	margin-bottom: 23px;
-	font-weight: bold;
-}
-
-
-.post ul{
-	width: 761px;
-	text-indent: 50px;
-	list-style-position: inside;
-}
-
-h4{
-	font-weight: bold;
+.noidung .content h3{
+  font-size: 14px;
+  text-align: right;
 }
